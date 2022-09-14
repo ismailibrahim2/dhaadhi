@@ -1,0 +1,19 @@
+{
+  "name": "dhaadhi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./static/src/input.css -o ./static/css/base.css",
+    "watch": "npx tailwindcss -i ./static/src/input.css -o ./static/css/base.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "flowbite": "^1.5.3"
+  }
+}

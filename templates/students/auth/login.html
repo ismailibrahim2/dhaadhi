@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <h1>Login Page</h1>
+    <div class="form">
+        <div class="field-item">
+            <label for="username">Username</label>
+            <input type="text" name="username">
+        </div>
+        <div class="field-item">
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
+        <p>You don't have an account? click <a href="{% url 'students:register' %}">here</a> to signup</p>
+        <button type="submit">Login</button>
+    </div>
+    <p class="message">{% for message in messages %}{{message}}{% endfor %}</p>
+</form>
+{% endblock %}
